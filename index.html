@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Sobre Mim</title>
+</head>
+<body>
+    <header>
+       <div class="container">
+            <h1 id="menu">APRESENTAÇÃO</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about">Sobre Mim</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+       </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <img class="img-front" src="images/dev.png" alt="Personagem"/>
+            <div class="about-me">
+                <h2>Sobre Mim</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dicta natus dolorem, inventore iste, quia nisi, similique porro quibusdam id ipsa. Alias dolorem omnis voluptatibus explicabo sit odit voluptate. Accusamus.
+                </p>
+                <p id="texto2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dicta natus dolorem, inventore iste, quia nisi, similique porro quibusdam id ipsa. Alias dolorem omnis voluptatibus explicabo sit odit voluptate. Accusamus.
+                </p>
+                <ul class="brands-list">
+                    <li><img src="images/java.png" alt="Java"/></li>
+                    <li><img src="images/htmlcssjs.png" alt="Tecnologias front" /></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <fieldset>
+        <legend>Contato</legend>
+        <div class="container">    
+            <div class="contact-methods">
+                <div>
+                    <h3>Deixe sua mensagem</h3>
+                    <form method="POST">
+                        <input type="text" placeholder="Seu Nome" required title="Digite seu Nome"/>
+                        <input type="email" placeholder="mail@example.com" required pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="Digite seu Email"/>
+                        <input type="tel" placeholder="Seu Telefone (Opcional)" title="Digite seu Telefone"/>
+                        <textarea placeholder="Sua Mensagem" required></textarea>
+                        <select name="lista" size="5" multiple title="Segure Ctrl para selecionar mais de uma opção">
+                            <option selected value="0">Nenhuma das Opções</option>
+                            <option value="1">Criação de Site</option>
+                            <option value="2">Criação de Sistema</option>
+                            <option value="3">Rotinas em ERP / CRM</option>
+                            <option value="4">Somente Manutenção</option>
+                        </select>
+                        <button>Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Me Acompanhe!</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" title="Siga-nos no Instagram">
+                                <img src="./images/instagram.png" alt="Logo do Instagram"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook">
+                                <img src="./images/facebook.png" alt="Logo do Facebook"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal do Youtube">
+                                <img src="./images/youtube.png" alt="Logo do Youtube"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="services">
+                    <h3>Serviços Prestados:</h3>
+                    <ul>
+                        <li>
+                            Criação de Sites
+                        </li>
+                        <li>
+                            Criação de Sistemas
+                        </li>
+                        <li>
+                            Manutenção inclusa pelo período de um ano
+                        </li>
+                        <li>
+                            Desenvolvimento e implementação de Rotinas<br/>
+                            em sistemas CRM e/ou ERP
+                        </li>
+                        <li>
+                            Ofereço Garantia de Satisfação
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Lucc4rpr - Todos os Direitos Reservados - 2023
+            </p>
+        </div>
+        <a href="#menu">    
+            <img id="seta" src="./images/setacima.png" title="Ir para o Topo" />
+        </a>
+    </footer>
+</body>
+</html>
