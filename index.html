@@ -2,6 +2,36 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <!-- No <head> do arquivo html, inserimos as tags <meta> que servirão para "estilizarmos" o link da página/site
+    Para ver mais sobre os tipos de "property" e "content" existentes para cada caso, acesse: 
+    https://developers.facebook.com/docs/sharing/webmasters
+    
+    OBS: o "og:" significa "OpenGraph, que é o que define o visual de um link nas redes sociais"
+
+    Primeiramente, vamos especificar o link exato que se quer acessar (no caso a url da página/site). Obs: Mesmo que o link/url já seja conhecido
+    pelo usuário que o compartilhou/enviou para alguém através de uma rede social, o facebook, por exemplo, solicita que o especifiquemos no 
+    nosso arquivo html também. Vamos especificar através da tag e atributos: <meta property="tipo daquilo que você está especificando, no caso, 
+    uma URL" content="link/URL da página/site" />-->
+    <meta property="og:url" content="https://projeto-1-nine-pied.vercel.app/" />
+
+    <!-- Agora, definiremos o tipo deste site/página. Há MUITOS tipos possíveis que se pode colocar, neste caso, vamos utilizar a mais comum/
+    usada, que é "article" (se for a página de um produto para vender, pode-se colocar "product", e assim por diante). Caso não seja definido
+    esta tag e propriedades referentes ao tipo de site/página, o padrão adotado pelas redes sociais é como sendo do tipo "website", que seria
+    um site pessoal. -->
+    <meta property="og:type" content="article" />
+
+    <!-- Agora, vamos definir a primeira parte visual que mexeremos, no caso, o título que aparece quando compartilhamos ou enviamos o link em
+    uma rede social (ou seja, aquele texto que fica abaixo da imagem e tem um tamanho maior): -->
+    <meta property="og:title" content="Exemplo de título para o link do meu site" />
+
+    <!-- Agora, vamos definir o texto que fica abaixo do título do link, no caso, a descrição para o link: -->
+    <meta property="og:description" content="Exemplo de texto para utilizar como descrição para nosso link" />
+
+    <!-- Agora, vamos definir a imagem que vai aparecer como "capa" do link. OBS: o tamanho da imagem (recomendado) é de 1200x630 px e no
+    máximo 5MB. -->
+    <meta property="og:image" content="images/java.png" />
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
